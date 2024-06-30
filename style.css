@@ -1,0 +1,51 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #009dff;
+  }
+  .contain{display: grid;
+           width: 600px;
+    grid-template-columns: 600px;
+    grid-template-rows: 60px 400px 60px;
+    gap: 1px 1px;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "eff"
+      "effi"   
+      "yt";}
+  .eff { grid-area: eff; border:2px outset #00aaff;
+        background: linear-gradient(#0a0533, #00aaff);
+       border-top-left-radius: 30px;
+       border-top-right-radius: 10px;
+       font-family: 'No Help';
+       text-shadow: 2px 2px #00aaff, -2px -2px #0287ca;}
+  #ware{transform: translate(0px, -25px);
+        animation: niav;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(3, end);}
+  @keyframes niav{
+    10%{opacity: 100%;}
+    13%{opacity: 00%;}
+    17%{opacity: 10%; transform: translate(19px, -25px);}
+    29%{opacity: 0%;}
+    67%{opacity: 0%;}
+    77%{opacity: 75%}
+    79%{opacity:100% ; transform: translate(-12px, -25px);}
+    89%{opacity: 20%;}}
+  #flamer{transform: translate(-230px, -32px);}
+  .effi { grid-area: effi; 
+        background-image: url('eytcart.png');
+        background-size: 500px;
+        background-position: center;
+        color:white;
+        font-family: 'courier new';}
+  #hand{transform: translate(0px, 235px);}
+  .yt { grid-area: yt; border:2px inset #00aaff;;
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius: 30px;
+      font-family: 'X-Files';
+      text-shadow: 1px 1px blue, -1px -1px blue;
+      font-size: 15px;
+      background: linear-gradient( #00aaff,#0a0533);}
+  
