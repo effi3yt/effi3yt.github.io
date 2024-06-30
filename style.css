@@ -2,6 +2,7 @@ html {
     height: 100%;
     width: 100%;
     background-color: #009dff;
+    background-image: url('200w.gif');
   }
   .contain{display: grid;
            width: 600px;
@@ -13,7 +14,9 @@ html {
       "eff"
       "effi"   
       "yt";}
-  .eff { grid-area: eff; border:2px outset #00aaff;
+  .eff { grid-area: eff;
+    
+        border:2px outset #00aaff;
         background: linear-gradient(#0a0533, #00aaff);
        border-top-left-radius: 30px;
        border-top-right-radius: 10px;
@@ -27,11 +30,11 @@ html {
   @keyframes niav{
     10%{opacity: 100%;}
     13%{opacity: 00%;}
-    17%{opacity: 10%; transform: translate(19px, -25px);}
+    17%{opacity: 10%; transform: translate(10px, -25px);}
     29%{opacity: 0%;}
     67%{opacity: 0%;}
     77%{opacity: 75%}
-    79%{opacity:100% ; transform: translate(-12px, -25px);}
+    79%{opacity:100% ; transform: translate(-2px, -25px);}
     89%{opacity: 20%;}}
   #flamer{transform: translate(-230px, -32px);}
   .effi { grid-area: effi; 
@@ -47,5 +50,8 @@ html {
       font-family: 'X-Files';
       text-shadow: 1px 1px blue, -1px -1px blue;
       font-size: 15px;
-      background: linear-gradient( #00aaff,#0a0533);}
-  
+      background: linear-gradient( #00aaff,#0a0533);
+      color:black;}
+  a{text-decoration: none;
+   color:black;}
+  a:visited{color: black;}
